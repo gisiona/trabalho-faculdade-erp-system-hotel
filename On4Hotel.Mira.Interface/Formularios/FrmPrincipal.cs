@@ -62,19 +62,7 @@ namespace On4Hotel.Mira.Interface.Formularios
         {
         }
 
-        private void PasteToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-        }
-
-        private void ToolBarToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            toolStrip.Visible = toolBarToolStripMenuItem.Checked;
-        }
-
-        private void StatusBarToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            statusStrip.Visible = statusBarToolStripMenuItem.Checked;
-        }
+       
 
         private void CascadeToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -102,6 +90,21 @@ namespace On4Hotel.Mira.Interface.Formularios
             {
                 childForm.Close();
             }
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button11_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
