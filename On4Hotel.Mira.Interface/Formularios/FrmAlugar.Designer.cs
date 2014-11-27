@@ -30,6 +30,8 @@
         {
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.button3 = new System.Windows.Forms.Button();
@@ -50,10 +52,8 @@
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.maskedTextBox7 = new System.Windows.Forms.MaskedTextBox();
             this.maskedTextBox6 = new System.Windows.Forms.MaskedTextBox();
-            this.maskedTextBox5 = new System.Windows.Forms.MaskedTextBox();
             this.label19 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label12 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
@@ -76,8 +76,10 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.label20 = new System.Windows.Forms.Label();
+            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.maskedTextBox5 = new System.Windows.Forms.MaskedTextBox();
+            this.label17 = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.groupBox4.SuspendLayout();
@@ -117,6 +119,24 @@
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Alugar";
             this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(509, 452);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(111, 39);
+            this.button2.TabIndex = 13;
+            this.button2.Text = "Cancelar";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(388, 452);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(111, 39);
+            this.button1.TabIndex = 12;
+            this.button1.Text = "Finalizar";
+            this.button1.UseVisualStyleBackColor = true;
             // 
             // comboBox2
             // 
@@ -284,12 +304,14 @@
             // 
             // groupBox3
             // 
+            this.groupBox3.Controls.Add(this.maskedTextBox5);
+            this.groupBox3.Controls.Add(this.label17);
+            this.groupBox3.Controls.Add(this.textBox9);
+            this.groupBox3.Controls.Add(this.label20);
             this.groupBox3.Controls.Add(this.maskedTextBox7);
             this.groupBox3.Controls.Add(this.maskedTextBox6);
-            this.groupBox3.Controls.Add(this.maskedTextBox5);
             this.groupBox3.Controls.Add(this.label19);
             this.groupBox3.Controls.Add(this.label18);
-            this.groupBox3.Controls.Add(this.label17);
             this.groupBox3.Controls.Add(this.comboBox1);
             this.groupBox3.Controls.Add(this.label12);
             this.groupBox3.Location = new System.Drawing.Point(6, 166);
@@ -311,21 +333,12 @@
             // maskedTextBox6
             // 
             this.maskedTextBox6.Enabled = false;
-            this.maskedTextBox6.Location = new System.Drawing.Point(370, 34);
+            this.maskedTextBox6.Location = new System.Drawing.Point(370, 35);
             this.maskedTextBox6.Mask = "90:00";
             this.maskedTextBox6.Name = "maskedTextBox6";
             this.maskedTextBox6.Size = new System.Drawing.Size(70, 20);
             this.maskedTextBox6.TabIndex = 7;
             this.maskedTextBox6.ValidatingType = typeof(System.DateTime);
-            // 
-            // maskedTextBox5
-            // 
-            this.maskedTextBox5.Location = new System.Drawing.Point(10, 34);
-            this.maskedTextBox5.Mask = "90:00";
-            this.maskedTextBox5.Name = "maskedTextBox5";
-            this.maskedTextBox5.Size = new System.Drawing.Size(70, 20);
-            this.maskedTextBox5.TabIndex = 6;
-            this.maskedTextBox5.ValidatingType = typeof(System.DateTime);
             // 
             // label19
             // 
@@ -345,30 +358,25 @@
             this.label18.TabIndex = 4;
             this.label18.Text = "Hora de Saída:";
             // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(7, 17);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(73, 13);
-            this.label17.TabIndex = 3;
-            this.label17.Text = "Hora Entrada:";
-            // 
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Items.AddRange(new object[] {
-            "1 - Hora - R$ 18,00",
-            "2 - Hora - R$ 20,00"});
-            this.comboBox1.Location = new System.Drawing.Point(105, 34);
+            "1 - Hora",
+            "2 - Hora",
+            "3 - Hora",
+            "4 - Hora",
+            "12 - Pernoite",
+            "24 - Diária"});
+            this.comboBox1.Location = new System.Drawing.Point(10, 34);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(243, 21);
+            this.comboBox1.Size = new System.Drawing.Size(108, 21);
             this.comboBox1.TabIndex = 2;
             // 
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(101, 17);
+            this.label12.Location = new System.Drawing.Point(6, 17);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(46, 13);
             this.label12.TabIndex = 1;
@@ -568,23 +576,39 @@
             this.tabPage3.Text = "Consumo";
             this.tabPage3.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // label20
             // 
-            this.button2.Location = new System.Drawing.Point(509, 452);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(111, 39);
-            this.button2.TabIndex = 13;
-            this.button2.Text = "Cancelar";
-            this.button2.UseVisualStyleBackColor = true;
+            this.label20.AutoSize = true;
+            this.label20.Location = new System.Drawing.Point(134, 18);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(75, 13);
+            this.label20.TabIndex = 9;
+            this.label20.Text = "Valor Período:";
             // 
-            // button1
+            // textBox9
             // 
-            this.button1.Location = new System.Drawing.Point(388, 452);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(111, 39);
-            this.button1.TabIndex = 12;
-            this.button1.Text = "Finalizar";
-            this.button1.UseVisualStyleBackColor = true;
+            this.textBox9.Location = new System.Drawing.Point(137, 35);
+            this.textBox9.Name = "textBox9";
+            this.textBox9.Size = new System.Drawing.Size(100, 20);
+            this.textBox9.TabIndex = 10;
+            // 
+            // maskedTextBox5
+            // 
+            this.maskedTextBox5.Location = new System.Drawing.Point(264, 35);
+            this.maskedTextBox5.Mask = "90:00";
+            this.maskedTextBox5.Name = "maskedTextBox5";
+            this.maskedTextBox5.Size = new System.Drawing.Size(70, 20);
+            this.maskedTextBox5.TabIndex = 12;
+            this.maskedTextBox5.ValidatingType = typeof(System.DateTime);
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Location = new System.Drawing.Point(261, 17);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(73, 13);
+            this.label17.TabIndex = 11;
+            this.label17.Text = "Hora Entrada:";
             // 
             // FrmAlugar
             // 
@@ -659,11 +683,13 @@
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.MaskedTextBox maskedTextBox7;
         private System.Windows.Forms.MaskedTextBox maskedTextBox6;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox5;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox textBox9;
+        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.MaskedTextBox maskedTextBox5;
+        private System.Windows.Forms.Label label17;
     }
 }

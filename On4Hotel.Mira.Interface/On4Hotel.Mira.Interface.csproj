@@ -87,6 +87,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Imagem\Exit.png" />
     <Content Include="Imagem\Alugar_48.png" />
     <Content Include="Imagem\Cliente_48.png" />
     <Content Include="Imagem\Cliente_64.png" />

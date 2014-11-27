@@ -14,5 +14,6 @@ namespace On4Hotel.Mira.Dominio
         public String Cpf { get; set; }
         public DateTime DataCadastro { get; set; }
         public String Obs { get; set; }
+        public Boolean status { get; set; }
     }
 }
