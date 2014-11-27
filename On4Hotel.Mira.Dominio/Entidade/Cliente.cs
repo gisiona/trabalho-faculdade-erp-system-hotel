@@ -15,5 +15,6 @@ namespace On4Hotel.Mira.Dominio
         public DateTime DataCadastro { get; set; }
         public String Obs { get; set; }
         public Boolean status { get; set; }
+        public DateTime DataNascimento { get; set; }
     }
 }
