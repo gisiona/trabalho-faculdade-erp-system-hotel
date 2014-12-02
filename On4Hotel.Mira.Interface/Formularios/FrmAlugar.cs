@@ -16,5 +16,22 @@ namespace On4Hotel.Mira.Interface.Formularios
         {
             InitializeComponent();
         }
+        
+        private void maskedTextBox1_KeyDown(object sender, KeyEventArgs e)
+        {
+            
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            FrmConsultarProduto fcp = new FrmConsultarProduto();
+            fcp.ShowDialog();
+        }
+
     }
 }

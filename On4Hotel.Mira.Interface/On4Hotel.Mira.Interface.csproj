@@ -33,6 +33,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -50,19 +51,37 @@
     <Compile Include="Formularios\FrmAlugar.Designer.cs">
       <DependentUpon>FrmAlugar.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\FrmConsultarProduto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FrmConsultarProduto.Designer.cs">
+      <DependentUpon>FrmConsultarProduto.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\FrmPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Formularios\FrmPrincipal.Designer.cs">
       <DependentUpon>FrmPrincipal.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\TesteFlowLayout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\TesteFlowLayout.Designer.cs">
+      <DependentUpon>TesteFlowLayout.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Formularios\FrmAlugar.resx">
       <DependentUpon>FrmAlugar.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FrmConsultarProduto.resx">
+      <DependentUpon>FrmConsultarProduto.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formularios\FrmPrincipal.resx">
       <DependentUpon>FrmPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\TesteFlowLayout.resx">
+      <DependentUpon>TesteFlowLayout.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

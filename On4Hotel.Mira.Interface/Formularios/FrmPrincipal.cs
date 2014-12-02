@@ -2,11 +2,13 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Configuration;
 
 namespace On4Hotel.Mira.Interface.Formularios
 {
@@ -62,7 +64,7 @@ namespace On4Hotel.Mira.Interface.Formularios
         {
         }
 
-       
+
 
         private void CascadeToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -234,6 +236,34 @@ namespace On4Hotel.Mira.Interface.Formularios
         {
             FrmAlugar alugar = new FrmAlugar();
             alugar.ShowDialog();
+        }
+
+        private void helpToolStripButton_Click(object sender, EventArgs e)
+        {
+            TesteFlowLayout t = new TesteFlowLayout();
+            t.Show();
+        }
+
+
+        /// <summary>
+        /// Teste de conexão com o banco de dados.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void FrmPrincipal_Load(object sender, EventArgs e)
+        {
+            using (var cn = new SqlConnection(ConfigurationManager.ConnectionStrings["nomeConexao"].ConnectionString))
+            {
+                try
+                {
+                    cn.Open();
+                    MessageBox.Show("Conectou ao banco com sucesso.");
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }
         }
     }
 }

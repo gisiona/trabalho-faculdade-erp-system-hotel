@@ -50,6 +50,10 @@
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.maskedTextBox5 = new System.Windows.Forms.MaskedTextBox();
+            this.label17 = new System.Windows.Forms.Label();
+            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.label20 = new System.Windows.Forms.Label();
             this.maskedTextBox7 = new System.Windows.Forms.MaskedTextBox();
             this.maskedTextBox6 = new System.Windows.Forms.MaskedTextBox();
             this.label19 = new System.Windows.Forms.Label();
@@ -76,10 +80,6 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.label20 = new System.Windows.Forms.Label();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.maskedTextBox5 = new System.Windows.Forms.MaskedTextBox();
-            this.label17 = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.groupBox4.SuspendLayout();
@@ -128,6 +128,7 @@
             this.button2.TabIndex = 13;
             this.button2.Text = "Cancelar";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button1
             // 
@@ -178,6 +179,7 @@
             this.button3.TabIndex = 11;
             this.button3.Text = "Adicionar";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // label16
             // 
@@ -320,6 +322,40 @@
             this.groupBox3.TabIndex = 9;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Parmanência";
+            // 
+            // maskedTextBox5
+            // 
+            this.maskedTextBox5.Location = new System.Drawing.Point(264, 35);
+            this.maskedTextBox5.Mask = "90:00";
+            this.maskedTextBox5.Name = "maskedTextBox5";
+            this.maskedTextBox5.Size = new System.Drawing.Size(70, 20);
+            this.maskedTextBox5.TabIndex = 12;
+            this.maskedTextBox5.ValidatingType = typeof(System.DateTime);
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Location = new System.Drawing.Point(261, 17);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(73, 13);
+            this.label17.TabIndex = 11;
+            this.label17.Text = "Hora Entrada:";
+            // 
+            // textBox9
+            // 
+            this.textBox9.Location = new System.Drawing.Point(137, 35);
+            this.textBox9.Name = "textBox9";
+            this.textBox9.Size = new System.Drawing.Size(100, 20);
+            this.textBox9.TabIndex = 10;
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Location = new System.Drawing.Point(134, 18);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(75, 13);
+            this.label20.TabIndex = 9;
+            this.label20.Text = "Valor Período:";
             // 
             // maskedTextBox7
             // 
@@ -520,6 +556,7 @@
             this.maskedTextBox1.Name = "maskedTextBox1";
             this.maskedTextBox1.Size = new System.Drawing.Size(81, 20);
             this.maskedTextBox1.TabIndex = 4;
+            this.maskedTextBox1.KeyDown += new System.Windows.Forms.KeyEventHandler(this.maskedTextBox1_KeyDown);
             // 
             // label3
             // 
@@ -575,40 +612,6 @@
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Consumo";
             this.tabPage3.UseVisualStyleBackColor = true;
-            // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.Location = new System.Drawing.Point(134, 18);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(75, 13);
-            this.label20.TabIndex = 9;
-            this.label20.Text = "Valor Período:";
-            // 
-            // textBox9
-            // 
-            this.textBox9.Location = new System.Drawing.Point(137, 35);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(100, 20);
-            this.textBox9.TabIndex = 10;
-            // 
-            // maskedTextBox5
-            // 
-            this.maskedTextBox5.Location = new System.Drawing.Point(264, 35);
-            this.maskedTextBox5.Mask = "90:00";
-            this.maskedTextBox5.Name = "maskedTextBox5";
-            this.maskedTextBox5.Size = new System.Drawing.Size(70, 20);
-            this.maskedTextBox5.TabIndex = 12;
-            this.maskedTextBox5.ValidatingType = typeof(System.DateTime);
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(261, 17);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(73, 13);
-            this.label17.TabIndex = 11;
-            this.label17.Text = "Hora Entrada:";
             // 
             // FrmAlugar
             // 

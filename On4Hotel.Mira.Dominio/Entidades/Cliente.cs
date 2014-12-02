@@ -13,6 +13,7 @@ namespace On4Hotel.Mira.Dominio
         public String Rg { get; set; }
         public String Cpf { get; set; }
         public DateTime DataCadastro { get; set; }
+        public DateTime DataNascimento { get; set; }
         public String Obs { get; set; }
         public Boolean status { get; set; }
     }
