@@ -1,12 +1,16 @@
-﻿using System;
+﻿using On4Hotel.Mira.Repositorio;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using On4Hotel.Mira.Dominio;
+using On4Hotel.Mira.Repositorio;
 
 namespace On4Hotel.Mira.Interface.Formularios
 {
@@ -234,6 +238,38 @@ namespace On4Hotel.Mira.Interface.Formularios
         {
             FrmAlugar alugar = new FrmAlugar();
             alugar.ShowDialog();
+        }
+
+        private void toolStripButton2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void toolStripButton3_Click(object sender, EventArgs e)
+        {
+            Teste t = new Teste();
+            t.ShowDialog();
+        }
+
+        private void FrmPrincipal_Load(object sender, EventArgs e)
+        {
+            carregarQuartos();
+        }
+
+        private void toolStripButton1_Click(object sender, EventArgs e)
+        {
+            carregarQuartos();
+        }
+
+        private void carregarQuartos()
+        {
+            flp1.Controls.Clear();
+            List<Button> botoes = new List<Button>();
+            botoes = Botao.adicionarBotao();
+            foreach (Button b in botoes)
+            {
+                flp1.Controls.Add(b);
+            }
         }
     }
 }

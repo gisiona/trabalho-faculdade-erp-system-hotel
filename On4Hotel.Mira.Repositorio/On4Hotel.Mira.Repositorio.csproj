@@ -39,7 +39,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Conexao.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QuartoDB.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\On4Hotel.Mira.Dominio\On4Hotel.Mira.Dominio.csproj">
+      <Project>{bfb8ba3c-eea3-4d70-b435-93d28068f4eb}</Project>
+      <Name>On4Hotel.Mira.Dominio</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

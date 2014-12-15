@@ -44,6 +44,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Formularios\Botao.cs" />
     <Compile Include="Formularios\FrmAlugar.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -56,6 +57,12 @@
     <Compile Include="Formularios\FrmPrincipal.Designer.cs">
       <DependentUpon>FrmPrincipal.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\Teste.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Teste.Designer.cs">
+      <DependentUpon>Teste.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Formularios\FrmAlugar.resx">
@@ -63,6 +70,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\FrmPrincipal.resx">
       <DependentUpon>FrmPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Teste.resx">
+      <DependentUpon>Teste.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -92,6 +102,20 @@
     <Content Include="Imagem\Cliente_48.png" />
     <Content Include="Imagem\Cliente_64.png" />
     <Content Include="Imagem\Cliente_72.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\On4Hotel.Mira.Dominio\On4Hotel.Mira.Dominio.csproj">
+      <Project>{bfb8ba3c-eea3-4d70-b435-93d28068f4eb}</Project>
+      <Name>On4Hotel.Mira.Dominio</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\On4Hotel.Mira.Negocio\On4Hotel.Mira.Negocio.csproj">
+      <Project>{326a773f-4dca-437f-9724-c250bd4fe9d1}</Project>
+      <Name>On4Hotel.Mira.Negocio</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\On4Hotel.Mira.Repositorio\On4Hotel.Mira.Repositorio.csproj">
+      <Project>{5ba548aa-dfd7-4c29-acc3-1fca4b245d7e}</Project>
+      <Name>On4Hotel.Mira.Repositorio</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
